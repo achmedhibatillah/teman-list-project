@@ -17,24 +17,26 @@ Halaman utama aplikasi ini menampilkan identitas saya (pemilik aplikasi) dan mem
 
 **Tampilan Landing Page:**
 ![Landing Page Screenshot](public/images/readme/lp-1.png)
+![Landing Page Screenshot](public/images/readme/lp-2.png)
 
 ### 2. **Daftar Teman**
 Halaman **Daftar Teman** memungkinkan pengguna untuk melihat seluruh teman berdasarkan jenjang pendidikan mereka. Daftar ini dikelompokkan berdasarkan jenjang seperti SD, SMP, SMA, Kuliah, dan Kerja. Pada halaman ini, Anda dapat melihat daftar teman yang terdaftar dalam database sesuai dengan jenjang pendidikan masing-masing.
 
 **Tampilan Daftar Teman:**
-![Daftar Teman Screenshot](path/to/daftar-teman-screenshot.png)
+![Landing Page Screenshot](public/images/readme/daftar-teman.png)
 
 ### 3. **List Teman**
 Halaman **List Teman** memungkinkan pengguna untuk melihat seluruh teman berdasarkan kategori tertentu, seperti "Teman Dekat", "Teman Curhat", "Teman Nongkrong", "Teman Organisasi", dan "Teman Belajar". Pengguna dapat dengan mudah menavigasi daftar teman berdasarkan kategori yang telah ditentukan.
 
 **Tampilan List Teman:**
-![List Teman Screenshot](path/to/list-teman-screenshot.png)
+![Landing Page Screenshot](public/images/readme/list-teman.png)
 
 ### 4. **Tambah Teman**
 Halaman **Tambah Teman** menyediakan formulir untuk menambahkan data teman baru ke dalam database. Pengguna dapat mengisi nama teman dan memilih jenjang pendidikan serta kategori yang sesuai dengan teman tersebut. Setelah mengisi formulir, pengguna dapat menambahkan teman baru ke dalam daftar.
 
 **Tampilan Tambah Teman:**
-![Tambah Teman Screenshot](path/to/tambah-teman-screenshot.png)
+![Landing Page Screenshot](public/images/readme/tambah-teman-1.png)
+![Landing Page Screenshot](public/images/readme/tambah-teman-2.png)
 
 ---
 

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lp-100vh {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.lp-50vh {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.table-data { width: 100%; }
+.table-data th { background-color: #b4b4b4; padding: 5px 10px 5px 10px; }
+.table-data tr { border-bottom: 1px solid #b4b4b4; }

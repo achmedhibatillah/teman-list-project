@@ -1,0 +1,131 @@
+CRITICAL - 2024-12-28 09:01:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "style.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('style.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('style', null, true)
+ 3 APPPATH\Views\templates\header.php(8): CodeIgniter\View\View->include('style')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\app\\Views\\templates\\header.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/header', [], true)
+ 7 APPPATH\Controllers\Home.php(10): view('templates/header')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 09:01:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(11): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 09:01:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(11): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 15:30:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "menu/daftar-teman.php"
+[Method: GET, Route: daftar-teman]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('menu/daftar-teman.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('menu/daftar-teman', [], true)
+ 3 APPPATH\Controllers\Menu.php(18): view('menu/daftar-teman')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Menu->daftar_teman()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 16:44:02 --> ErrorException: Undefined variable $teman
+[Method: GET, Route: daftar-teman]
+in APPPATH\Views\menu\daftar-teman.php on line 29.
+ 1 APPPATH\Views\menu\daftar-teman.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $teman', 'C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\app\\Views\\menu\\daftar-teman.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\app\\Views\\menu\\daftar-teman.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('menu/daftar-teman', [], true)
+ 5 APPPATH\Controllers\Menu.php(18): view('menu/daftar-teman')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Menu->daftar_teman()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 16:45:53 --> InvalidArgumentException: "teman1" is not a valid database connection group.
+[Method: GET, Route: daftar-teman]
+in SYSTEMPATH\Database\Config.php on line 72.
+ 1 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('teman1')
+ 2 APPPATH\Controllers\Menu.php(18): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Menu->daftar_teman()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 16:45:54 --> InvalidArgumentException: "teman1" is not a valid database connection group.
+[Method: GET, Route: daftar-teman]
+in SYSTEMPATH\Database\Config.php on line 72.
+ 1 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('teman1')
+ 2 APPPATH\Controllers\Menu.php(18): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Menu->daftar_teman()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 16:46:23 --> InvalidArgumentException: "teman1" is not a valid database connection group.
+[Method: GET, Route: daftar-teman]
+in SYSTEMPATH\Database\Config.php on line 72.
+ 1 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('teman1')
+ 2 APPPATH\Controllers\Menu.php(18): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Menu->daftar_teman()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 16:46:24 --> InvalidArgumentException: "teman1" is not a valid database connection group.
+[Method: GET, Route: daftar-teman]
+in SYSTEMPATH\Database\Config.php on line 72.
+ 1 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('teman1')
+ 2 APPPATH\Controllers\Menu.php(18): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Menu->daftar_teman()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')
+CRITICAL - 2024-12-28 16:47:22 --> InvalidArgumentException: "teman1" is not a valid database connection group.
+[Method: GET, Route: daftar-teman]
+in SYSTEMPATH\Database\Config.php on line 72.
+ 1 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('teman1')
+ 2 APPPATH\Controllers\Menu.php(18): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Menu->daftar_teman()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\teman-project\\public\\index.php')

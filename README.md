@@ -83,14 +83,12 @@ Aplikasi ini menggunakan 6 tabel utama dalam database untuk menyimpan data teman
 
 ## Cara Menjalankan Aplikasi
 
-### Persyaratan:
-1. PHP 8.3 atau yang lebih baru
-2. Server web (misalnya Apache atau Nginx)
-3. Database MySQL/MariaDB
-4. Framework CodeIgniter 4.5.6
-
 ### Langkah-langkah Instalasi:
 
 1. **Clone repositori** ke direktori lokal Anda:
    ```bash
    git clone https://github.com/username/teman-project.git
+
+2. Buat schema baru di MySQL Anda:
+   ```bash
+   create schema teman-project

@@ -1,6 +1,4 @@
 # Who is My Friend? - Web Application
-
-## Pembuat
 - **Achmed Hibatillah**  
   Fakultas Ilmu Komputer, Universitas Brawijaya
 

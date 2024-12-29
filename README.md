@@ -1,60 +1,89 @@
-# CodeIgniter 4 Framework
+# Who is My Friend? - Web Application
 
-## What is CodeIgniter?
+## Deskripsi
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+"Who is My Friend?" adalah aplikasi web yang dirancang untuk membantu pengguna mengelola data teman-teman mereka berdasarkan jenjang pendidikan dan kategori. Aplikasi ini memiliki berbagai menu untuk menampilkan daftar teman berdasarkan jenjang pendidikan atau kategori yang berbeda. Pengguna juga dapat menambahkan teman baru ke dalam daftar.
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+Aplikasi ini dibangun menggunakan **PHP 8.3** dan menggunakan framework **CodeIgniter 4.5.6**.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+---
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## Fitur Menu
 
-## Important Change with index.php
+### 1. **Landing Page**
+Halaman utama aplikasi ini menampilkan identitas saya (pemilik aplikasi) dan memiliki dua tombol utama untuk mengakses menu lainnya: **"Daftar Teman"** dan **"List Teman"**. Pada halaman ini, Anda akan menemukan tombol yang mengarahkan pengguna ke halaman **Daftar Teman** dan **List Teman**.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+**Tampilan Landing Page:**
+![Landing Page Screenshot](path/to/landing-page-screenshot.png)
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+### 2. **Daftar Teman**
+Halaman **Daftar Teman** memungkinkan pengguna untuk melihat seluruh teman berdasarkan jenjang pendidikan mereka. Daftar ini dikelompokkan berdasarkan jenjang seperti SD, SMP, SMA, Kuliah, dan Kerja. Pada halaman ini, Anda dapat melihat daftar teman yang terdaftar dalam database sesuai dengan jenjang pendidikan masing-masing.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+**Tampilan Daftar Teman:**
+![Daftar Teman Screenshot](path/to/daftar-teman-screenshot.png)
 
-## Repository Management
+### 3. **List Teman**
+Halaman **List Teman** memungkinkan pengguna untuk melihat seluruh teman berdasarkan kategori tertentu, seperti "Teman Dekat", "Teman Curhat", "Teman Nongkrong", "Teman Organisasi", dan "Teman Belajar". Pengguna dapat dengan mudah menavigasi daftar teman berdasarkan kategori yang telah ditentukan.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+**Tampilan List Teman:**
+![List Teman Screenshot](path/to/list-teman-screenshot.png)
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+### 4. **Tambah Teman**
+Halaman **Tambah Teman** menyediakan formulir untuk menambahkan data teman baru ke dalam database. Pengguna dapat mengisi nama teman dan memilih jenjang pendidikan serta kategori yang sesuai dengan teman tersebut. Setelah mengisi formulir, pengguna dapat menambahkan teman baru ke dalam daftar.
 
-## Contributing
+**Tampilan Tambah Teman:**
+![Tambah Teman Screenshot](path/to/tambah-teman-screenshot.png)
 
-We welcome contributions from the community.
+---
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+## Struktur Database
 
-## Server Requirements
+Aplikasi ini menggunakan 6 tabel utama dalam database untuk menyimpan data teman berdasarkan kategori dan jenjang pendidikan mereka. Berikut adalah struktur tabel yang digunakan dalam aplikasi:
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+1. **kategori_teman**
+   - Menyimpan kategori teman (misalnya: Dekat, Curhat, Nongkrong, dll.)
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+2. **teman_sd**
+   - Menyimpan data teman yang berasal dari jenjang SD.
+   - Kolom: `id`, `nama_teman_sd`, `kategori_teman`
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+3. **teman_smp**
+   - Menyimpan data teman yang berasal dari jenjang SMP.
+   - Kolom: `id`, `nama_teman_smp`, `kategori_teman`
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+4. **teman_sma**
+   - Menyimpan data teman yang berasal dari jenjang SMA.
+   - Kolom: `id`, `nama_teman_sma`, `kategori_teman`
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+5. **teman_kuliah**
+   - Menyimpan data teman yang berasal dari jenjang Kuliah.
+   - Kolom: `id`, `nama_teman_kuliah`, `kategori_teman`
+
+6. **teman_kerja**
+   - Menyimpan data teman yang berasal dari jenjang Kerja.
+   - Kolom: `id`, `nama_teman_kerja`, `kategori_teman`
+
+---
+
+## Teknologi yang Digunakan
+
+- **PHP 8.3**: Versi terbaru PHP yang digunakan untuk membangun aplikasi ini.
+- **CodeIgniter 4.5.6**: Framework PHP yang digunakan untuk membangun aplikasi web ini.
+- **HTML, CSS, JavaScript**: Teknologi frontend untuk tampilan dan interaktivitas pengguna.
+- **MySQL/MariaDB**: Sistem manajemen basis data yang digunakan untuk menyimpan data teman-teman.
+
+---
+
+## Cara Menjalankan Aplikasi
+
+### Persyaratan:
+1. PHP 8.3 atau yang lebih baru
+2. Server web (misalnya Apache atau Nginx)
+3. Database MySQL/MariaDB
+4. Framework CodeIgniter 4.5.6
+
+### Langkah-langkah Instalasi:
+
+1. **Clone repositori** ke direktori lokal Anda:
+   ```bash
+   git clone https://github.com/username/teman-project.git

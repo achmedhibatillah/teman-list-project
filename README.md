@@ -89,7 +89,7 @@ Aplikasi ini menggunakan 6 tabel utama dalam database untuk menyimpan data teman
    ```bash
    git clone https://github.com/achmedhibatillah/teman-list-project
 
-2. Buat schema baru di MySQL Anda melalui query berikut:
+2. **Buat schema baru di MySQL Anda** melalui query berikut:
    ```bash
    create schema teman-project
 

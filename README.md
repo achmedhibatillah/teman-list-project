@@ -91,9 +91,9 @@ Aplikasi ini menggunakan 6 tabel utama dalam database untuk menyimpan data teman
 
 2. **Buat schema baru di MySQL Anda** melalui query berikut:
    ```bash
-   create schema teman-project
+   create schema teman_project
 
-3. Masuk ke direktori teman-project dan jalankan perintah ini di terminal:
+3. Dalam direktori teman-project, **migrasikan databasenya** dengan menjalankan perintah ini di terminal:
    ```bash
    php spark migrate
 

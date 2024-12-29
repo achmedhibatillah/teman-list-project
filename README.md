@@ -46,26 +46,29 @@ Aplikasi ini menggunakan 6 tabel utama dalam database untuk menyimpan data teman
 
 1. **kategori_teman**
    - Menyimpan kategori teman (misalnya: Dekat, Curhat, Nongkrong, dll.)
+   - Kolom: `id_kategori_teman`, `kategori_teman`
 
 2. **teman_sd**
    - Menyimpan data teman yang berasal dari jenjang SD.
-   - Kolom: `id`, `nama_teman_sd`, `kategori_teman`
+   - Kolom: `id_teman_sd`, `nama_teman_sd`, `id_kategori_teman`
 
 3. **teman_smp**
    - Menyimpan data teman yang berasal dari jenjang SMP.
-   - Kolom: `id`, `nama_teman_smp`, `kategori_teman`
+   - Kolom: `id_teman_smp`, `nama_teman_smp`, `id_kategori_teman`
 
 4. **teman_sma**
    - Menyimpan data teman yang berasal dari jenjang SMA.
-   - Kolom: `id`, `nama_teman_sma`, `kategori_teman`
+   - Kolom: `id_teman_sma`, `nama_teman_sma`, `id_kategori_teman`
 
 5. **teman_kuliah**
    - Menyimpan data teman yang berasal dari jenjang Kuliah.
-   - Kolom: `id`, `nama_teman_kuliah`, `kategori_teman`
+   - Kolom: `id_teman_kuliah`, `nama_teman_kuliah`, `id_kategori_teman`
 
 6. **teman_kerja**
    - Menyimpan data teman yang berasal dari jenjang Kerja.
-   - Kolom: `id`, `nama_teman_kerja`, `kategori_teman`
+   - Kolom: `id_teman_kerja`, `nama_teman_kerja`, `id_kategori_teman`
+
+*Seluruh tabel ini tersimpan dalam migration file.*
 
 ---
 

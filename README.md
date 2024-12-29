@@ -1,5 +1,9 @@
 # Who is My Friend? - Web Application
 
+## Pembuat
+- **Achmed Hibatillah**  
+  Fakultas Ilmu Komputer, Universitas Brawijaya
+
 ## Deskripsi
 
 "Who is My Friend?" adalah aplikasi web yang dirancang untuk membantu pengguna mengelola data teman-teman mereka berdasarkan jenjang pendidikan dan kategori. Aplikasi ini memiliki berbagai menu untuk menampilkan daftar teman berdasarkan jenjang pendidikan atau kategori yang berbeda. Pengguna juga dapat menambahkan teman baru ke dalam daftar.

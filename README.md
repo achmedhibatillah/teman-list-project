@@ -16,7 +16,7 @@ Aplikasi ini dibangun menggunakan **PHP 8.3** dan menggunakan framework **CodeIg
 Halaman utama aplikasi ini menampilkan identitas saya (pemilik aplikasi) dan memiliki dua tombol utama untuk mengakses menu lainnya: **"Daftar Teman"** dan **"List Teman"**. Pada halaman ini, Anda akan menemukan tombol yang mengarahkan pengguna ke halaman **Daftar Teman** dan **List Teman**.
 
 **Tampilan Landing Page:**
-![Landing Page Screenshot](path/to/landing-page-screenshot.png)
+![Landing Page Screenshot](public/images/readme/lp-1.png)
 
 ### 2. **Daftar Teman**
 Halaman **Daftar Teman** memungkinkan pengguna untuk melihat seluruh teman berdasarkan jenjang pendidikan mereka. Daftar ini dikelompokkan berdasarkan jenjang seperti SD, SMP, SMA, Kuliah, dan Kerja. Pada halaman ini, Anda dapat melihat daftar teman yang terdaftar dalam database sesuai dengan jenjang pendidikan masing-masing.
